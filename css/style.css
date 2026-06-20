@@ -29,6 +29,9 @@ body {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--color-body);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
@@ -103,7 +106,7 @@ a{
 }
 .nav__heading{
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: rem;
 }
 @media  screen and (min-width: 768px) {
   .nav__heading{
@@ -119,6 +122,7 @@ a{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  
 }
 
 .presentation__paragraphe{
@@ -129,3 +133,81 @@ a{
   font-size: 2rem;
 
 }
+/* quotes */
+.quote__text {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-body-darker);
+}
+.quote__text::before {
+  content: open-quote;
+}
+.quote__text::after {
+  content: close-quote;
+}
+/* media */
+.media {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.media__title {
+  margin: 0;
+}
+.meda__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin-top: 1rem;
+}
+/* icons*/
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--white {
+  fill: white;
+}
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
+/* Testimonial */
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  margin: 10rem auto;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  
+}
+.testimonail__description h1 {
+  margin: 0;
+}
+.testimonail__description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonail__description p {
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+
+
